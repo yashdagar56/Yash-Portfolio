@@ -1,7 +1,6 @@
 # ✨ Yash Dagar | Premium Developer Portfolio
 
-[![GitHub license](https://img.shields.io/github/license/yashdagar56/Portfolio)](https://github.com/yashdagar56/Portfolio/blob/master/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/yashdagar56/Portfolio)](https://github.com/yashdagar56/Portfolio/stargazers)
+
 
 Welcome to the open-source repository for my **Premium Developer Portfolio**! This website is crafted to offer an immersive, first-person experience showcasing my skills, projects, and journey as a Software Engineer. 
 

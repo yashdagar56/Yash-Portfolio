@@ -235,8 +235,7 @@
 
                     <!-- Form note directly under contact info -->
                     <p class="form-note">
-                        <i class="fas fa-info-circle"></i> To receive emails from this form, create a free account at
-                        <strong>Web3Forms</strong> and place your Access Key in the <code>index.html</code> code.
+                        <i class="fas fa-envelope-circle-check"></i> Messages go directly to <strong>ydagar787@gmail.com</strong> via Web3Forms.
                     </p>
 
                     <div class="info-list">
@@ -244,7 +243,7 @@
                             <i class="fas fa-envelope"></i>
                             <div class="info-text">
                                 <span>EMAIL</span>
-                                <p>contact@example.com</p>
+                                <p>ydagar787@gmail.com</p>
                             </div>
                         </div>
 
@@ -268,27 +267,32 @@
 
                 <div class="contact-form-container glass-card">
                     <!-- Web3Forms integration -->
-                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                        <!-- REPLACE WITH YOUR WEB3FORMS ACCESS KEY -->
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <!-- Web3Forms Access Key (linked to ydagar787@gmail.com) -->
                         <input type="hidden" name="access_key" value="b8870eeb-0cce-45b0-9114-70aaa077bcfa">
+                        <input type="hidden" name="subject" value="New Portfolio Contact Message">
+                        <input type="hidden" name="from_name" value="Yash Dagar Portfolio">
+                        <!-- Honeypot spam protection -->
+                        <input type="checkbox" name="botcheck" style="display:none">
 
                         <div class="form-group">
                             <label>Full Name</label>
-                            <input type="text" name="name" placeholder="John Doe" required>
+                            <input type="text" name="name" id="contact-name" placeholder="John Doe" required>
                         </div>
 
                         <div class="form-group">
                             <label>Email Address</label>
-                            <input type="email" name="email" placeholder="john@example.com" required>
+                            <input type="email" name="email" id="contact-email" placeholder="john@example.com" required>
                         </div>
 
                         <div class="form-group">
                             <label>Your Message</label>
-                            <textarea name="message" rows="4" placeholder="How can I help you?" required></textarea>
+                            <textarea name="message" id="contact-message" rows="4" placeholder="How can I help you?" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn primary-btn submit-btn">Send Message <i
-                                class="fas fa-paper-plane"></i></button>
+                        <div id="form-status" class="form-status" style="display:none;"></div>
+
+                        <button type="submit" id="submit-btn" class="btn primary-btn submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
